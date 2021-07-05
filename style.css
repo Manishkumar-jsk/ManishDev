@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Adamina', serif;
+}
+
+header {
+    background: #710117;
+    color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+
+.container1 {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.container1 h1 {
+    font-family: 'Adamina', serif;
+    font-size: 4rem;
+}
+
+.move__on i {
+    font-size: 4.6rem;
+    margin-top: 50px;
+    margin-right: 90px;
+}
+
+.cycle i {
+    font-size: 6rem;
+    float: left;
+    position: relative;
+    top: 250px;
+}
+
+#about__me {
+    background: #FFFFFF;
+    width: 100%;
+    padding: 10px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about__me h1 {
+    padding-top: 80px;
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+
+.about__me__img {
+    padding-top: 50px;
+}
+
+.about__text {
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.about__text p {
+    padding-top: 20px;
+    font-family: 'Adamina', serif;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 2.5rem;
+    margin-right: 20px;
+}
+
+.about__text h1 {
+    padding-top: 10px;
+    font-size: 2rem;
+}
+
+.profile {
+    width: 60%;
+}
+
+#projects {
+    background: #ECD5BB;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.project1 {
+    margin: 10px;
+}
+
+.project1 img {
+    border-radius: 20px;
+}
+
+.projects__btn {
+    padding-top: 20px;
+    margin-left: 38px;
+}
+
+footer {
+    background: #54627B;
+    color: white;
+}
+
+.footer-text {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.footer-icon i {
+    font-size: 2rem;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.footer-icon {
+    margin-left: 330px;
+}
+
+
+/*animation*/
+
+@keyframes example {
+    0% {
+        left: 0px;
+        top: 250px;
+        transition: 0.5s;
+    }
+    100% {
+        left: 1300px;
+        top: 250px;
+        transition: 0.5s;
+    }
+}
+
+.cycle1 {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.cycle2 {
+    display: none;
+}
+
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: shakeY;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* don't forget to set a duration! */
+}
+
+.section {
+    /*padding: 15rem 3rem;*/
+    border-top: 1px solid #ddd;
+    transition: transform 1s, opacity 0.5s;
+}
+
+.section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+}
+
+
+/* .fadeInLeft {
+-webkit-animation-name: fadeInLeft;
+animation-name: fadeInLeft;
+-webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}*/
+
+@keyframes fadeInLeft {
+    0% {
+        -webkit-transform: translate3d(-400px, 0, 0);
+        transform: translate3d(-400px, 0, 0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
